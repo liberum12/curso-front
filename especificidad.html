@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* La especifidad
+Es como el navegador va a mostrar el CSS de acuerdo a que
+tan especifico es el selector que creaste.
+
+Especifidad > Cascada
+
+Jerarquia de la importancia en css
+---> !important = 10000
+---> estilos en linea = 1000
+---> #id = 100
+---> .clases = 10
+---> pseudoclases y pseudoelementos = 10
+---> selector univeral = 0
+*/
+        #platzi {
+            color: red;
+        }
+        .master {
+            color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="platzi" class="master">Platzi</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: salmon;
+        }
+        div p:nth-child(2) {
+            color: violet;
+        }
+        p::first-letter {
+            color: teal;
+        }
+        p:hover::before {
+            content: "👉";
+        }
+        p::after {
+            content: "👀";
+        }
+        p:hover {
+            color: skyblue;
+        }
+        input::placeholder {
+            color: tomato;
+        }
+        input {
+            display: flex;
+        }
+        input:in-range {
+            background-color: rgba(114, 245, 114, 0.25);
+        }
+        input:out-of-range {
+            background-color: rgba(245, 128, 128, 0.25);
+            border: 2px solid red;
+        }
+        input:in-range +p::after {
+            content: "Mayor de edad :D";
+        }
+        input:out-of-range + p::after {
+            content: "Menos de edad :c";
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+    <label for="age">Introduce tu edad y te digo si eres menor o mayor de edad</label>
+    <input type="number" name="age" id="age" min="18" max= "100" value="14">
+    <p>Eres: </p>
+</body>
+</html>

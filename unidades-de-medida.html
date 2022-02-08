@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*UNIDADES DE MEDIDA
+Absolutas: Unidad de medida que no va a cambiar sin importar el
+tamaño de la pantalla. EJ: px, pt, pc, in, cm, mm
+Relativas: Pueden cambiar en relación con el tamaño de la pantalla:
+EJ: rem (root em o elemento), em (elemento), vw, vh, vmin, vmax, ex, ch*/
+        html {
+            font-size: 62.5%;
+        }
+        /*100% equivale a 16px (el font-size predeterminado del html
+            X  equivale a 10px (el valor que queremos que tenga el html
+            Con esta fórmula podemos sacar el porcentaje que representa
+            los 10px que vamos a uasr de ahora en adelante al determinar
+            las medidas en rem*/
+        body {
+            margin: 0px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        p {
+            font-size: 2rem;
+        }
+        /* 2rem son 20px según la modificación que le hicimos al
+        font-size*/
+        .container {
+            width: 100vw; /*view width toma como referencia el tamaño del viewport
+            o pantalla*/
+            height: 100vh; /*view hight toma como referencia el alto del viewport
+            o pantalla*/
+            background: plum;
+        }
+
+        /*Estilos que siempre deben estar presentes en los .css
+        * {
+            box-sizing: ;
+            border-box: ;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        */
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <p>Master</p>
+    <div class="container">
+
+    </div>
+</body>
+</html>

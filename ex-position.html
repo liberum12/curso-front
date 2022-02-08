@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatito con su bola de estámbre</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        #michi {
+            width: 800px;
+        }
+        #estambre {
+            width: 100px;
+            position: absolute;
+            /*cuando usamos un absolute, este elemento se va a mover
+            con respecto al elemento relative más cercano, así que en
+            este caso moveremos el estambre con respecto a nuestro contenedor 😄.*/
+            top: 220px;
+            left: 480px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="estambre" src="https://previews.123rf.com/images/nata7777/nata77771604/nata7777160400465/55859392-gomitolo-di-lana-su-sfondo-bianco.jpg" alt="Estambre">
+        <img id="michi" src="https://static.platzi.com/media/user_upload/michi-0cd46b59-feda-4746-81a0-cc48179411ae.jpg" alt="Michi">
+    </div>
+</body>
+</html>

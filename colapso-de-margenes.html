@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-flex {
+            display: flex;
+            flex-direction: column;
+        }
+        .my-grid {
+            display: grid;
+        }
+        div {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- section/class funciona como un elemento contenedor con
+    display: flex; propiedad que evita el colapso de márgenes de
+    cada elemento que contiene (en este caso, los dos divs). -->
+    <section class="container-flex">
+        <!-- Colapso de márgenes con dos elementos (los dos divs)
+            con propiedad de block. Aquí sí se colapsan los márgenes.-->
+    <div>Platzi</div>
+    <div>Master</div>
+    </section>
+    <!-- En el caso de CSS Grid, el colapso de márgenes tampoco sucede.-->
+    <div class="my-grid">
+        <p>Platzi</p>
+        <p>Associates</p>
+        <p>Sí.</p>
+        <p>Eso existe :)</p>
+    </div>
+
+    <!-- En resumen:
+        SUCEDE CUANDO: hay dos elementos de block adyacentes.
+        NO SUCEDE CUANDO: cuando el elemento contenedor tiene
+        propiedad flex, grid o que NO sea block.-->
+</body>
+</html>
